@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'constants.dart';
 
 class GenderBlock extends StatelessWidget {
   GenderBlock({
@@ -23,7 +24,7 @@ class GenderBlock extends StatelessWidget {
         ),
         Text(
           gText,
-          style: TextStyle(fontSize: 18.0, color: Color(0xFF8D8E98)),
+          style: kTextStyleOne,
         )
       ],
     );
