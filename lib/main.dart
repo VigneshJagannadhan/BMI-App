@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'InputPage.dart';
+import 'ScreensAndPages/InputPage.dart';
+import 'package:flutter/services.dart';
 
 void main() {
   runApp(BMICalculator());
@@ -10,6 +11,10 @@ class BMICalculator extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    SystemChrome.setPreferredOrientations([
+      DeviceOrientation.portraitUp,
+      DeviceOrientation.portraitDown,
+    ]); // This is to lock the screen orientation to portrait
     return MaterialApp(
       theme: ThemeData.dark().copyWith(
         primaryColor: Color(0xFF0a0e21),
